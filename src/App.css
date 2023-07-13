@@ -44,7 +44,7 @@ input{
 .dropdown button{
     width: 14em;
 }
-.RightDiv{
+.Table{
     width: 50%;
     height: 80%;
     display: flex;
@@ -52,14 +52,61 @@ input{
     gap: 2em;
     align-items: flex-end;
 }
-.RightDiv div{
+.TableContent{
     background-color: white;
     width: 100%;
     height: 90%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.WeekDays,.Quantity{
+    width: 30%;
+    height: 100%;
+}
+.Products{
+    width: 40%;
+}
+.border-none{
+    border-collapse: collapse;
+    border: none;
+}
+.border-none th:first-child{
+    border-left:none;
+}
+.border-none td {
+    border: 1px solid black;
+}
+.border-none tr:first-child td {
+  border-top: none;
+}
+.border-none tr:last-child td {
+  border-bottom: none;
+}
+.border-none tr td:first-child {
+  border-left: none;
+}
+.border-none tr td:last-child {
+  border-right: none;
+}
+table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+td{
+    padding: 5px;
+}
+th{
+    width: 25%;
+    border-left:1px solid black;
+    border-bottom: 1px solid black;
 }
 .error{
     color: red;
     font-size: 0.8rem;
     display: none;
+    margin-top: 0;
 }
 
